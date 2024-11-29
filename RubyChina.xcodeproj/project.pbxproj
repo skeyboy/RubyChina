@@ -6,6 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9B52B0EA2CF8B8D00072572D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9B52B0E92CF8B8D00072572D /* Alamofire */; };
+		9B52B0F32CF964280072572D /* MJRefresh in Frameworks */ = {isa = PBXBuildFile; productRef = 9B52B0F22CF964280072572D /* MJRefresh */; };
+		9B6593E62CF8A6F500DDC5BE /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 9B6593E52CF8A6F500DDC5BE /* Kingfisher */; };
+		9B926B7B2CF9770300886FF7 /* NetworkImage in Frameworks */ = {isa = PBXBuildFile; productRef = 9B926B7A2CF9770300886FF7 /* NetworkImage */; };
+		9B926B7E2CF977C300886FF7 /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9B926B7D2CF977C300886FF7 /* MarkdownUI */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		9B6593CC2CF8A62400DDC5BE /* RubyChina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RubyChina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +31,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B6593E62CF8A6F500DDC5BE /* Kingfisher in Frameworks */,
+				9B926B7B2CF9770300886FF7 /* NetworkImage in Frameworks */,
+				9B52B0F32CF964280072572D /* MJRefresh in Frameworks */,
+				9B52B0EA2CF8B8D00072572D /* Alamofire in Frameworks */,
+				9B926B7E2CF977C300886FF7 /* MarkdownUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +46,7 @@
 			isa = PBXGroup;
 			children = (
 				9B6593CE2CF8A62400DDC5BE /* RubyChina */,
+				9B926B7C2CF977C300886FF7 /* Frameworks */,
 				9B6593CD2CF8A62400DDC5BE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +57,13 @@
 				9B6593CC2CF8A62400DDC5BE /* RubyChina.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		9B926B7C2CF977C300886FF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,6 +86,11 @@
 			);
 			name = RubyChina;
 			packageProductDependencies = (
+				9B6593E52CF8A6F500DDC5BE /* Kingfisher */,
+				9B52B0E92CF8B8D00072572D /* Alamofire */,
+				9B52B0F22CF964280072572D /* MJRefresh */,
+				9B926B7A2CF9770300886FF7 /* NetworkImage */,
+				9B926B7D2CF977C300886FF7 /* MarkdownUI */,
 			);
 			productName = RubyChina;
 			productReference = 9B6593CC2CF8A62400DDC5BE /* RubyChina.app */;
@@ -91,9 +117,18 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 9B6593C32CF8A62300DDC5BE;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				9B6593E42CF8A6F500DDC5BE /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				9B52B0E82CF8B8D00072572D /* XCRemoteSwiftPackageReference "Alamofire" */,
+				9B52B0F12CF964280072572D /* XCRemoteSwiftPackageReference "MJRefresh" */,
+				9B926B772CF9768F00886FF7 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */,
+				9B926B782CF976BE00886FF7 /* XCRemoteSwiftPackageReference "swift-cmark" */,
+				9B926B792CF9770300886FF7 /* XCRemoteSwiftPackageReference "NetworkImage" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 9B6593CD2CF8A62400DDC5BE /* Products */;
 			projectDirPath = "";
@@ -184,6 +219,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -240,6 +276,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -259,6 +296,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,6 +325,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -322,6 +361,85 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9B52B0E82CF8B8D00072572D /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://githubfast.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+		9B52B0F12CF964280072572D /* XCRemoteSwiftPackageReference "MJRefresh" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CoderMJLee/MJRefresh";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.7.9;
+			};
+		};
+		9B6593E42CF8A6F500DDC5BE /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://githubfast.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.1.1;
+			};
+		};
+		9B926B772CF9768F00886FF7 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://githubfast.com/gonzalezreal/swift-markdown-ui";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.4.1;
+			};
+		};
+		9B926B782CF976BE00886FF7 /* XCRemoteSwiftPackageReference "swift-cmark" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://githubfast.com/swiftlang/swift-cmark";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.0;
+			};
+		};
+		9B926B792CF9770300886FF7 /* XCRemoteSwiftPackageReference "NetworkImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://githubfast.com/gonzalezreal/NetworkImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9B52B0E92CF8B8D00072572D /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B52B0E82CF8B8D00072572D /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		9B52B0F22CF964280072572D /* MJRefresh */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B52B0F12CF964280072572D /* XCRemoteSwiftPackageReference "MJRefresh" */;
+			productName = MJRefresh;
+		};
+		9B6593E52CF8A6F500DDC5BE /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B6593E42CF8A6F500DDC5BE /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		9B926B7A2CF9770300886FF7 /* NetworkImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B926B792CF9770300886FF7 /* XCRemoteSwiftPackageReference "NetworkImage" */;
+			productName = NetworkImage;
+		};
+		9B926B7D2CF977C300886FF7 /* MarkdownUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B926B772CF9768F00886FF7 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */;
+			productName = MarkdownUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9B6593C42CF8A62300DDC5BE /* Project object */;
 }
