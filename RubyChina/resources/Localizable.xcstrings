@@ -4,19 +4,19 @@
     "" : {
 
     },
-    "%@ * last replay by %@ at %@" : {
+    "%@ * last replay by %@ at" : {
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%1$@ * last replay by %2$@ at %3$@"
+            "value" : "%1$@ * last replay by %2$@ at"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%1$@ * 最后由 %2$@ 回复于 %3$@"
+            "value" : "%1$@ * 最后由 %2$@ 回复于 %3"
           }
         }
       }
@@ -119,6 +119,28 @@
     "%lld个点赞" : {
 
     },
+    "commit" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "提交"
+          }
+        }
+      }
+    },
+    "commit replay" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "提交回帖"
+          }
+        }
+      }
+    },
     "Current app version: %@ (%@)" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -132,6 +154,69 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "当前app版本：%1$@(%2$@)"
+          }
+        }
+      }
+    },
+    "Dark Mode" : {
+
+    },
+    "Detail" : {
+      "comment" : "详情页",
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "详情"
+          }
+        }
+      }
+    },
+    "discard" : {
+      "comment" : "放弃回帖",
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "放弃"
+          }
+        }
+      }
+    },
+    "discard replay" : {
+      "comment" : "放弃回帖",
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "放弃回帖"
+          }
+        }
+      }
+    },
+    "excellent" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "精华"
+          }
+        }
+      }
+    },
+    "Hello, World!" : {
+
+    },
+    "Home" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "首页"
           }
         }
       }
@@ -154,6 +239,7 @@
       }
     },
     "just now" : {
+      "comment" : "刚才",
       "extractionState" : "manual",
       "localizations" : {
         "zh-Hans" : {
@@ -164,7 +250,126 @@
         }
       }
     },
+    "Key" : {
+      "extractionState" : "manual"
+    },
+    "Key 1" : {
+      "extractionState" : "manual"
+    },
+    "last_actived" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "最新活动"
+          }
+        }
+      }
+    },
+    "Me" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "我"
+          }
+        }
+      }
+    },
+    "no_reply" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无回帖"
+          }
+        }
+      }
+    },
+    "nodes" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "节点"
+          }
+        }
+      }
+    },
+    "Other" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "其他"
+          }
+        }
+      }
+    },
+    "Permanently erase the items in the Trash?" : {
+
+    },
+    "popular" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "热门"
+          }
+        }
+      }
+    },
+    "recent" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "最近"
+          }
+        }
+      }
+    },
+    "replay" : {
+      "comment" : "回帖动作标题】",
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "回帖"
+          }
+        }
+      }
+    },
     "Select an item" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "选择一个条目"
+          }
+        }
+      }
+    },
+    "share" : {
+      "comment" : "分享标题",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "分享"
+          }
+        }
+      }
+    },
+    "放弃" : {
 
     }
   },

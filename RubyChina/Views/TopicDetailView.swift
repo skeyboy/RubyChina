@@ -28,6 +28,7 @@ class TopicDetailViewModel {
 struct TopicDetailView: View {
     var topicId: Int64
     @State private var viewModel: TopicDetailViewModel = .init()
+    @State private var isPresentedTopicReply: Bool = false
     init(topicId: Int64) {
         self.topicId = topicId
         self.viewModel.fetchTopic(topicId: topicId)
@@ -49,7 +50,9 @@ struct TopicDetailView: View {
                     Markdown(topicDetail.body ?? "")
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.leading, 20)
-                        .padding(.trailing, 20)
+                        .padding(.trailing, 20).onOpenURL { url in
+                            print("打开链接")
+                        }
                 }
                 Spacer()
             }.overlay(alignment: Alignment.bottom) {
@@ -57,7 +60,22 @@ struct TopicDetailView: View {
                     Text("\(topicDetail.likes_count ?? 0 )个点赞")
                     Spacer()
                 }.padding(.leading, 20)
-            }
+            }.toolbar {
+                ToolbarItem {
+                    Button {
+                        isPresentedTopicReply = true
+
+                    } label: {
+                        Text("share")
+                    }
+
+                }
+            }.sheet(isPresented: $isPresentedTopicReply) {
+                
+            } content: {
+                TopicReplayView(topicId: topicId, isPresentedTopicReply: $isPresentedTopicReply)
+            }.navigationTitle("Detail")
+
         } else {
             ProgressView()
         }
@@ -91,5 +109,7 @@ struct TopicDetailView: View {
 }
 
 #Preview {
-    TopicDetailView(topicId: 43959)
+    NavigationStack {
+        TopicDetailView(topicId: 43959)
+    }
 }

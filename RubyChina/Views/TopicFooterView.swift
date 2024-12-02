@@ -10,9 +10,13 @@ import SwiftUI
 struct TopicFooterView: View {
     var topic: TopicSerializer
     var body: some View {
-        HStack{
-            Text("\(topic.user?.login ?? "") * last replay by \(topic.last_reply_user_login ?? "") at \(topic.replied_at?.targetDate ?? "")").font(.system(size: 13))
-        }
+        HStack(alignment: .center,
+               spacing: 0, content: {
+            Text("\(topic.user?.login ?? "") * last replay by \(topic.last_reply_user_login ?? "") at").font(.system(size: 13))
+            if let targetDate = topic.replied_at?.targetDate {
+                Text(targetDate).font(.system(size: 13))
+            }
+        })
     }
 }
 

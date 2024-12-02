@@ -40,3 +40,19 @@ extension View {
             )
         }
 }
+
+
+
+extension View {
+    func defaultView() -> some View {
+        self.navigationDestination(for: RCNavigationPath.self) { path in
+            print(path)
+            return path.someView()
+        }
+    }
+    
+    func pathCustPageView(@ViewBuilder destionation: @escaping (_ path: RCNavigationPath) -> some View) -> some View {
+        self.navigationDestination(for: RCNavigationPath.self, destination: destionation)
+    }
+}
+

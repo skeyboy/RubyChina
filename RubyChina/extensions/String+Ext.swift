@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 extension String {
     
-    var targetDate: String {
+    var targetDate: LocalizedStringKey {
         // 指定时间字符串
         let targetTimeString = self
         
@@ -28,14 +28,14 @@ extension String {
             
             // 根据时间差值返回相应的描述
             if abs(timeInterval) < 3600 { // 1小时
-                return "just now"
+                return LocalizedStringKey("just now")
             } else if abs(timeInterval) < 86400 { // 24小时
                 let hours = Int(abs(timeInterval / 3600))
 
-                return "\(hours) hours ago"
+                return LocalizedStringKey("\(hours) hours ago")
             } else {
                 let days = Int(abs(timeInterval / 86400))
-                return "\(days) days ago"
+                return LocalizedStringKey("\(days) days ago")
             }
         }
         return ""

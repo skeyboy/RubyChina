@@ -1,5 +1,5 @@
 {
-  "originHash" : "398a7fa83b707c596c6c68bfac859f575cba9c5301f3bbb185b950059e776637",
+  "originHash" : "9cd98801f9c227d99ca2d10a60da78659f768b0374c9c006badbc3123b52f427",
   "pins" : [
     {
       "identity" : "alamofire",
@@ -53,6 +53,15 @@
       "state" : {
         "revision" : "5f613358148239d0292c0cef674a3c2314737f9e",
         "version" : "2.4.1"
+      }
+    },
+    {
+      "identity" : "swiftui-webview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/globulus/swiftui-webview",
+      "state" : {
+        "revision" : "f9be55089c020268760d626abbadd643a2b1ca4a",
+        "version" : "1.0.8"
       }
     }
   ],

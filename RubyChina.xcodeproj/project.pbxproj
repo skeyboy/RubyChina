@@ -12,6 +12,7 @@
 		9B6593E62CF8A6F500DDC5BE /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 9B6593E52CF8A6F500DDC5BE /* Kingfisher */; };
 		9B926B7B2CF9770300886FF7 /* NetworkImage in Frameworks */ = {isa = PBXBuildFile; productRef = 9B926B7A2CF9770300886FF7 /* NetworkImage */; };
 		9B926B7E2CF977C300886FF7 /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9B926B7D2CF977C300886FF7 /* MarkdownUI */; };
+		9BCB60482CFD9434005B829E /* SwiftUIWebView in Frameworks */ = {isa = PBXBuildFile; productRef = 9BCB60472CFD9434005B829E /* SwiftUIWebView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BCB60482CFD9434005B829E /* SwiftUIWebView in Frameworks */,
 				9B6593E62CF8A6F500DDC5BE /* Kingfisher in Frameworks */,
 				9B926B7B2CF9770300886FF7 /* NetworkImage in Frameworks */,
 				9B52B0F32CF964280072572D /* MJRefresh in Frameworks */,
@@ -91,6 +93,7 @@
 				9B52B0F22CF964280072572D /* MJRefresh */,
 				9B926B7A2CF9770300886FF7 /* NetworkImage */,
 				9B926B7D2CF977C300886FF7 /* MarkdownUI */,
+				9BCB60472CFD9434005B829E /* SwiftUIWebView */,
 			);
 			productName = RubyChina;
 			productReference = 9B6593CC2CF8A62400DDC5BE /* RubyChina.app */;
@@ -128,6 +131,7 @@
 				9B926B772CF9768F00886FF7 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */,
 				9B926B782CF976BE00886FF7 /* XCRemoteSwiftPackageReference "swift-cmark" */,
 				9B926B792CF9770300886FF7 /* XCRemoteSwiftPackageReference "NetworkImage" */,
+				9BCB60462CFD9434005B829E /* XCRemoteSwiftPackageReference "swiftui-webview" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 9B6593CD2CF8A62400DDC5BE /* Products */;
@@ -411,6 +415,14 @@
 				minimumVersion = 6.0.1;
 			};
 		};
+		9BCB60462CFD9434005B829E /* XCRemoteSwiftPackageReference "swiftui-webview" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/globulus/swiftui-webview";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.8;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -438,6 +450,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9B926B772CF9768F00886FF7 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */;
 			productName = MarkdownUI;
+		};
+		9BCB60472CFD9434005B829E /* SwiftUIWebView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9BCB60462CFD9434005B829E /* XCRemoteSwiftPackageReference "swiftui-webview" */;
+			productName = SwiftUIWebView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

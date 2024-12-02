@@ -7,9 +7,12 @@
 
 import SwiftUI
 import SwiftData
+import MarkdownUI
 
 @main
 struct RubyChinaApp: App {
+    @StateObject var pathManager: PathManager = .manager
+
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,
@@ -25,8 +28,9 @@ struct RubyChinaApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AppRootView()
         }
+        .environmentObject(pathManager)
         .modelContainer(sharedModelContainer)
     }
 }

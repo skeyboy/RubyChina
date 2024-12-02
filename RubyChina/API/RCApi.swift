@@ -13,6 +13,8 @@ enum RCApi {
     case topics(Topic)
     
     case replies(Replies)
+    
+    case nodes(Nodes)
 }
 
 
@@ -32,6 +34,8 @@ extension RCApi {
             return replay.path
         case .topics(let topic):
             return topic.path
+        case .nodes(let nodes):
+            return nodes.path
         }
     }
     
@@ -48,6 +52,8 @@ extension RCApi: APIProtocol {
             return topic.params
         case .replies(let replies):
             return replies.params
+        case .nodes(let nodes):
+            return nodes.params
         }
     }
     
@@ -57,6 +63,8 @@ extension RCApi: APIProtocol {
             return topic.method
         case .replies(let replies):
             return replies.method
+        case .nodes(let nodes):
+            return nodes.method
         }
     }
 
