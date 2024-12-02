@@ -12,7 +12,7 @@ struct AppRootView: View {
     var body: some View {
         RootContentView()
             .environment(\.openURL, OpenURLAction(handler: { url in
-                pathManager.push(.browser(URL(string:"https://www.baidu.com")!))
+                pathManager.push(.browser(url))
             return .handled
         }))
     }

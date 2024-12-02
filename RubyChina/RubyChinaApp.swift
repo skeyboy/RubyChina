@@ -12,7 +12,11 @@ import MarkdownUI
 @main
 struct RubyChinaApp: App {
     @StateObject var pathManager: PathManager = .manager
-
+    @State private var color: ColorScheme = .light
+    @Environment(\.colorScheme) var colorScheme
+    init(){
+        pathManager.color = colorScheme == .dark ? .dark : .light
+    }
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,
@@ -29,6 +33,7 @@ struct RubyChinaApp: App {
     var body: some Scene {
         WindowGroup {
             AppRootView()
+                .preferredColorScheme(pathManager.color)
         }
         .environmentObject(pathManager)
         .modelContainer(sharedModelContainer)

@@ -51,6 +51,7 @@ protocol RCNavigationProtocol {
 class PathManager : ObservableObject, RCNavigationProtocol {
     @Published var paths: [RCNavigationPath] = []
     @Published var index: TabItem = .home
+    @Published var color:ColorScheme? = nil
     static let manager: PathManager = .init()
     private init(){
         index = .home

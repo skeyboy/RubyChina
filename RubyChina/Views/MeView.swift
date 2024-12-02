@@ -12,6 +12,7 @@ struct MeView: View {
     var body: some View {
         ScrollView(.vertical) {
             Text("Hello, World!")
+            AppearanceView()
             Browser(url: URL(string: "https://www.baidu.com")!).frame(width: UIScreen.main.bounds.width , height: UIScreen.main.bounds.height)
         }.defaultView()
     }
