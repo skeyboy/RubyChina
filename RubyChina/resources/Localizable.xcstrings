@@ -368,6 +368,7 @@
     },
     "share" : {
       "comment" : "分享标题",
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -381,6 +382,9 @@
 
     },
     "放弃" : {
+
+    },
+    "网络加载异常" : {
 
     }
   },

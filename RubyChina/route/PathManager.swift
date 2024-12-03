@@ -29,8 +29,7 @@ enum RCNavigationPath : Hashable {
         
         switch self {
         case .browser(let url):
-            
-            return BrowserView(url: url).defaultView()
+            return WebView(url).defaultView()
             
         case .detail(let id):
             return TopicDetailView(topicId: id)

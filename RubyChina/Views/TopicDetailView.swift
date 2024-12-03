@@ -66,7 +66,7 @@ struct TopicDetailView: View {
                         isPresentedTopicReply = true
 
                     } label: {
-                        Text("share")
+                        Text("replay")
                     }
 
                 }
